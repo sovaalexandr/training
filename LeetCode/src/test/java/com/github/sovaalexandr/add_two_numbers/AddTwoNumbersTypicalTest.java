@@ -1,6 +1,6 @@
 package com.github.sovaalexandr.add_two_numbers;
 
-import org.junit.jupiter.api.Assertions;
+import com.github.sovaalexandr.ListNode;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -30,7 +30,7 @@ class AddTwoNumbersTypicalTest
         e10.next = e11;
         e11.next = new ListNode(8);
 
-        Assertions.assertEquals(e10, target.addTwoNumbers(l10, l20));
+        assertEquals(e10, target.addTwoNumbers(l10, l20));
     }
 
     @Test
@@ -48,6 +48,6 @@ class AddTwoNumbersTypicalTest
         final ListNode e10 = new ListNode(1);
         e10.next = new ListNode(8);
 
-        Assertions.assertEquals(e10, target.addTwoNumbers(l10, l20));
+        assertEquals(e10, target.addTwoNumbers(l10, l20));
     }
 }

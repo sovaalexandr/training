@@ -10,10 +10,11 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>LeetCode</module>
+        <module>CodeWars</module>
     </modules>
 
     <properties>
-        <junit.version>5.4.0-M1</junit.version>
+        <junit.version>5.5.1</junit.version>
     </properties>
 
     <dependencies>

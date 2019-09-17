@@ -1,5 +1,6 @@
 package com.github.sovaalexandr.add_two_numbers;
 
+import com.github.sovaalexandr.ListNode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

@@ -1,10 +1,10 @@
 package com.github.sovaalexandr.remove_nth_node_from_end_of_list;
 
+import com.github.sovaalexandr.ListNode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static com.github.sovaalexandr.remove_nth_node_from_end_of_list.RemoveNthNodeFromEndOfList.ListNode;
 
 class RemoveNthNodeFromEndOfListTest
 {

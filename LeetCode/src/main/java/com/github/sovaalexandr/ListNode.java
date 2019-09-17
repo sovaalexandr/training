@@ -1,9 +1,10 @@
-package com.github.sovaalexandr.add_two_numbers;
+package com.github.sovaalexandr;
 
-public class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) { val = x; }
+public class ListNode
+{
+    public int val;
+    public ListNode next;
+    public ListNode(int x) { val = x; }
 
     @Override
     public boolean equals(Object o)
@@ -26,11 +27,4 @@ public class ListNode {
         return next.equals(listNode.next);
     }
 
-    @Override
-    public int hashCode()
-    {
-        int result = val;
-        result = 31 * result + (null == next ? 0 : next.hashCode());
-        return result;
-    }
 }

@@ -1,5 +1,10 @@
 package com.github.sovaalexandr.remove_nth_node_from_end_of_list;
 
+import com.github.sovaalexandr.ListNode;
+
+/**
+ * {@see https://leetcode.com/problems/remove-nth-node-from-end-of-list}
+ */
 public class RemoveNthNodeFromEndOfList
 {
     public ListNode removeNthFromEnd(ListNode head, int n) {
@@ -20,29 +25,5 @@ public class RemoveNthNodeFromEndOfList
         prev.next = current.next;
 
         return head;
-    }
-
-    static public class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) { val = x; }
-
-        @Override
-        public boolean equals(Object o)
-        {
-            if (this == o) {
-                return true;
-            }
-            if (o == null || getClass() != o.getClass()) {
-                return false;
-            }
-
-            ListNode listNode = (ListNode) o;
-
-            if (val != listNode.val) {
-                return false;
-            }
-            return next != null ? next.equals(listNode.next) : listNode.next == null;
-        }
     }
 }

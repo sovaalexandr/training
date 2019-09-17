@@ -1,5 +1,7 @@
 package com.github.sovaalexandr.add_two_numbers;
 
+import com.github.sovaalexandr.ListNode;
+
 public class AddTwoNumbersTypical
 {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {

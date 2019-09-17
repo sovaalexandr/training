@@ -1,11 +1,9 @@
 package com.github.sovaalexandr.add_two_numbers;
+
+import com.github.sovaalexandr.ListNode;
+
 /**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
+ * {@see https://leetcode.com/problems/add-two-numbers}
  */
 public class AddTwoNumbers
 {
