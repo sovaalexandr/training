@@ -3,7 +3,7 @@ package com.github.sovaalexandr.add_two_numbers;
 import com.github.sovaalexandr.ListNode;
 
 /**
- * {@see https://leetcode.com/problems/add-two-numbers}
+ * {@see https://leetcode.com/problems/add-two-numbers/}
  */
 public class AddTwoNumbers
 {

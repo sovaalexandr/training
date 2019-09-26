@@ -2,6 +2,9 @@ package com.github.sovaalexandr.middle_of_the_linked_list;
 
 import com.github.sovaalexandr.ListNode;
 
+/**
+ * {@see https://leetcode.com/problems/middle-of-the-linked-list/}
+ */
 public class MiddleOfTheLinkedList
 {
     public ListNode middleNode(ListNode head) {

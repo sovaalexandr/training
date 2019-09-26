@@ -2,6 +2,9 @@ package com.github.sovaalexandr.convert_sorted_array_to_binary_search_tree;
 
 import com.github.sovaalexandr.TreeNode;
 
+/**
+ * {@see https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/submissions/}
+ */
 public class ConvertSortedArrayToBinarySearchTree
 {
     public TreeNode sortedArrayToBST(int[] nums) {
