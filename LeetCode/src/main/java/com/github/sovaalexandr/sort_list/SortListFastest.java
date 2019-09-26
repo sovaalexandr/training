@@ -5,16 +5,14 @@ import com.github.sovaalexandr.ListNode;
 public class SortListFastest
 {
     public ListNode sortList(ListNode head) {
-        if (head == null) {
-            return null;
-        }
+        if (null == head || null == head.next) return head;
 
         ListNode lt = null;
         ListNode gt = null;
         ListNode eq = null;
         int pivot = head.val;
 
-        while (head != null) {
+        while (null != head) {
             ListNode node = head;
             head = head.next;
             node.next = null;

@@ -17,23 +17,41 @@ public class SortList
     public ListNode sortList(ListNode head) {
         if (null == head || null == head.next) return head;
 
-        ListNode current = head.next, prev = head;
-        while (current != null) {
-            if (prev.val > current.val) {
-                // Remove node from list
-                prev.next = current.next;
-                if (head.val > current.val) { // Insert before head
-                    current.next = head;
-                    head = current;
-                } else { // Insert before greater number
-                    ListNode tmp = head;
-                    while (tmp.next.val < current.val) tmp = tmp.next;
-                    current.next = tmp.next;
-                    tmp.next = current;
-                }
-            } else prev = prev.next;
-            current = prev.next;
+        ListNode middle = head, last = head.next;
+        while (null != last && null != last.next) {
+            middle = middle.next;
+            last = last.next.next;
         }
+        ListNode right = middle.next;
+        middle.next = null;
+
+        return merge(sortList(head), sortList(right));
+    }
+
+    private ListNode merge(ListNode left, ListNode right) {
+        if (null == left) return right;
+        if (null == right) return left;
+
+        ListNode current = null, head = null;
+        while (left != null && right != null) {
+            if (left.val < right.val) {
+                if (null == current) head = current = left;
+                else {
+                    current.next = left;
+                    current = current.next;
+                }
+                left = left.next;
+            } else {
+                if (null == current) head = current = right;
+                else {
+                    current.next = right;
+                    current = current.next;
+                }
+                right = right.next;
+            }
+        }
+        current.next = null == left ? right : left;
+
         return head;
     }
 }
